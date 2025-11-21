@@ -12,7 +12,7 @@ def formata_numero(valor, prefixo = ''):
         valor /= 1000
     return f'{prefixo} {valor:.2f} milhões'
 
-st.title('DASHBOARD DE VENDAS :shopping_trolley:')
+st.title('DASHBOARD DE VENDAS :shopping_cart:')
 
 url = 'https://labdados.com/produtos'
 regioes = ['Brasil', 'Centro-Oeste', 'Nordeste', 'Norte', 'Sudeste', 'Sul']
@@ -181,3 +181,4 @@ with aba3:
                                         title = f'Top {qtd_vendedores} vendedores (quantidade de vendas)')
         st.plotly_chart(fig_vendas_vendedores, use_container_width = True)
          
+
